@@ -1,0 +1,19 @@
+p{
+    color: rgba(0, 0, 255, 0.863);
+}
+header h1{
+    color: red;
+}
+main p{
+    color: rgb(162, 226, 43);
+}
+#maintitle{
+    color: rgba(165, 42, 42, 0.605);
+}
+.orange{
+    color: aquamarine;
+}
+.bigger{
+    font-size: 15pt;
+    font-weight: bold;
+}
