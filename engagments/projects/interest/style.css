@@ -1,6 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(134, 234, 201);
+    color: black;
+    font-size: medium;
 }
 footer{
     color: #640b40;
@@ -16,5 +18,9 @@ footer{
 }
 .blue{
     color: rgb(12, 106, 106);
+}
+
+h2{
+    color: red
 }
        
