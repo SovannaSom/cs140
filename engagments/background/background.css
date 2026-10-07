@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: medium;
+    background-image: url(bluebg.jpg) ;
+    background-color: blueviolet;
+    background-repeat: repeat;
+    background: url(bluebg.jpg) repeat blue;
+}
+main{
+    background-image: url(redFlowerSmall.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background: url(redFlowerSmall.png) no-repeat top right;
+
+}
+
+.pipeline{
+    width: 250px;
+}
+
+.surfspot{
+    list-style-image: url(dot.png);
+  
+}
+
+.pchum{
+    width: 250px;
+}
+
+.red{
+    color: rgb(82, 243, 13);
+}
+
+h1{
+    color: rgb(15, 243, 61);
+}
