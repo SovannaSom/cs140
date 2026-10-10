@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: medium;
+    background-image: url(background.jpg) ;
+    background-color: white;
+    background-repeat: repeat;
+}
+nav a{
+    color: green;
+}
+.current{
+    color: black;
+}
+.angkor1{
+    width: 400px;
+}
+
+.dot{
+    list-style-image: url(dot.png);
+}
+.bayon1{
+    width: 600px;
+}
+.bayon{
+    width: 600px;
+}
+main{
+    background-image: url(redFlowerSmall.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+footer{
+    color: rgb(223, 24, 157);
+}
+h2{
+    color: blue;
+}
+h1{
+    color: red;
+}
