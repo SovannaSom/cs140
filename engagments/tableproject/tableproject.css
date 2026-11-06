@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#dance{
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+#dance th, td{
+    border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 10px;
+}
+#dance tbody th, #dance thead th {
+  background-color: rgb(156, 216, 87);
+  color:black;
+}
+td {
+  vertical-align: middle;
+}
+caption {
+  caption-side: bottom;
+}
+#dance tbody tr:nth-child(even) {
+    background-color: rgb(189, 243, 183);
+}
+#dance tbody tr td:last-child{
+    text-align: right;
+}
+.tablediv {
+    overflow: auto;  
+}
+table {
+    width: 100%;
+    padding: 20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+caption {
+    caption-side: top;
+    padding: 10px;
+    text-align: left;
+}
+.tablediv {
+    width: 70%;
+}
+
+
+
+
+
+h1 {
+    background-color: rgb(32, 201, 144);
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    background-color: rgb(100, 243, 186);
+    gap: 10px;
+    justify-content: space-evenly;
+}
+nav a:hover{
+    background-color:rgb(32, 201, 144);
+}
+
+.parent{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+aside{
+    padding: 10px;
+    width: 20%;
+}
+
+.sister{
+    border: 1px solid  rgb(237, 168, 89);
+    box-shadow: 3px 3px 2px rgba(180, 180, 180, 0.5);
+    margin: 10px;
+    background-color:  rgb(231, 230, 130);
+    padding: 10px;
+}
+footer{
+    
+    color: rgb(208, 18, 18);
+}
+@media ONLY screen AND (max-width: 680px){
+    .parent{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sister{
+        width: 100%;
+    }
+    .tablediv{
+        width: auto;
+    }
+
+}
+
