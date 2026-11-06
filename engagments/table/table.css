@@ -35,3 +35,6 @@ caption {
 #schedule tbody tr td:last-child{
     text-align: right;
 }
+.tablediv{
+    overflow: auto;
+}
