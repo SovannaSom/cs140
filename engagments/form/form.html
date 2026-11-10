@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Sovanna's Web Design</h1>
+    </header>
+    <main>
+       
+        <form action="formprocessing.html" method="post">
+            <div class="form-row">
+                <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <label for="birthday">Date of Birth</label>
+                <input id="birthday" type="date" name="birthday">
+            </div>
+            <div class="form-row">
+                <label for="age">Age</label>
+                <input id="age" type="number" name="age" placeholder="Age">
+            </div>
+            <div class="form-row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                <option value="blank">.....</option>
+                <option value="CA">California</option>
+                <option value="HI">Hawaii</option>
+                <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                  <p>Study Level</p>
+
+                 <label for="freshman">Freshman</label>
+                <input id="freshman" type="radio" name="level" value="freshman">
+                 <label for="sophomore">Sophomore</label>
+                <input id="sophomore" type="radio" name="level" value="sophomore">
+                 <label for="junior">Junior</label>
+                <input id="junior" type="radio" name="level" value="junior">
+            </div>
+            <div class="form-row">
+                  <p>Accommodation</p>
+
+                <label for="hale">Hale</label>
+                <input id="hale" type="checkbox" name="accommondation" value="hale">
+                <label for="tva">TVA</label>
+                <input id="tva" type="checkbox" name="accommondation" value="tva">
+            </div>
+             <div class="form-row">
+                <label for="about">What do you like about BYU-Hawaii?</label>
+                <textarea name="about" id="about" rows="4" cols="30" placeholder="I like..."></textarea> 
+            </div>
+            
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <h1>Answer</h1>
+        <p>1. The form tag has an "action" attribute. What does it do?<br>>>>it tells browser where to send the form information after users submit.</p>
+        <p>2. The form tag has a "method" attribute. What does it do?<br>>>>The method attribute tells browser how to send the form information to destination.</p>
+        <p>3. What is the difference between a "POST" and a "GET"? <br>>>>POST sends information in the request body. GET sends information through the URL.</p>
+        <p>4. How do you fill in a form control with a pre-set value, and how is that different from a placeholder? Answer for each of these: text box, textarea, select box, checkbox, and radio button. <br>>>>A pre-set value is information that is already filled in a form to to help user input information. A placeholder is a hint that tells the user what to type. For a text box, use value. For a textarea, write text between the opening and closing tags. For a select box, use selected. For a checkbox and radio button, use checked. </p>
+        <p>5. List all the form controls that HTML5 added. Which ones did you put in your form?<br>>>>All HTML5 Form Controls are email, URL, telephone, search, number, range, date, time, month, week, color, and datetime-local. I added email, date, and number to my form.</p>
+    </main>
+    <footer>
+        <p>&copy;2026 Sovanna Som</p>
+    </footer>
+</body>
+</html>
