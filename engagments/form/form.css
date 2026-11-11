@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 173, 107);
+}
+.form-row, .check-row{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    background-color: rgb(220, 209, 209);
+}
+
+.form-row input[type="submit"]{
+    padding: 5px;
+    background-color: rgb(57, 223, 57);
+}
+.form-row select,
+.form-row textarea {
+    padding: 5px;
+    background-color: rgb(220, 209, 209);
+}
+.form-row select:focus,
+.form-row textarea:focus {
+    background-color: white;
+    border: 2px solid blue;
+}
+.form-row input:focus{
+    padding: 5px;
+    background-color: white;
+}
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+input{
+   box-shadow: 5px 5px 3px rgb(228, 187, 149);
+   
+}
+fieldset{
+    border: thin solid black;
+    box-shadow: 5px 5px 3px gray;
+    background-color: rgb(244, 216, 181);
+    
+}
+legend{
+    border: thin solid black;
+    background-color: rgb(238, 193, 138);
+}
+@media only screen and (max-width: 600px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label{
+        text-align: left;
+    }
+    .spacer{
+        text-align: left;
+    }
+}
