@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Form</title>
+    <link rel="stylesheet" href="formproject.css">
+</head>
+<body>
+    <header>
+        <h1>Voluntary Work Form</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                 <div class="form-row">
+                <label for="personname">Full Name:</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <label for="birthday">Date of Birth:</label>
+                <input id="birthday" type="date" name="birthday">
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone Number:</label>
+                <input id="phone" type="tel" name="phone" placeholder="Phone Number">
+            </div>
+             <div class="check-row">
+                 <div class="spacer">Gender:</div>
+
+                <label for="male">Male</label>
+                <input id="male" type="radio" name="gender" value="male">
+                
+                <label for="female">Female</label>
+                <input id="female" type="radio" name="gender" value="female">
+                </div>
+          
+            <div class="check-row">
+                  <div class="spacer">Skills:</div>
+
+                 <label for="teaching">Teaching</label>
+                <input id="teaching" type="checkbox" name="skill" value="teaching">
+                 
+                <label for="teamwork">Teamwork</label>
+                <input id="teamwork" type="checkbox" name="skill" value="teamwork">
+                 
+                <label for="computer">Computer</label>
+                <input id="computer" type="checkbox" name="skill" value="computer">
+                
+                <label for="media">Media</label>
+                <input id="media" type="checkbox" name="skill" value="media">
+                </div>
+                  <div class="form-row">
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                <option value="blank">...</option>
+                <option value="CAM">Cambodia</option>
+                <option value="LAOS">Laos</option>
+                <option value="SIG">Singapore</option>
+                <option value="IND">Indonesia</option>
+
+                </select>
+            </div>
+           
+             <div class="form-row">
+                <label for="about">Your Message:</label>
+                <textarea name="about" id="about" rows="6" cols="40" placeholder="Tell us something about yourself..."></textarea> 
+            </div>
+            <div class="form-row">
+                <label for="comment">Why should we choose you?:</label>
+                <textarea name="comment" id="comment" rows="6" cols="40" placeholder="Write your answer here!"></textarea> 
+            </div>
+            
+            <div class="form-row">
+                <div class="spacer"></div>
+
+                <input type="submit">
+            </div>
+            </fieldset>
+            </form>
+
+
+    </main>
+    <footer>
+        <p>&copy;2026 Sovanna Som</p>
+    </footer>
+</body>
+</html>

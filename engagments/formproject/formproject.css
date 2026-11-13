@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgb(245, 108, 204);
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(49, 5, 27, 0.805);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 44, 175);
+    color: rgba(54, 3, 28, 0.805);
+    padding: 5px;
+    font-size: 20px;
+    
+}
+.form-row, .check-row{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.form-row input:not([type="submit"]){
+    padding: 5px;
+    background-color: rgb(236, 224, 224);
+}
+
+.form-row input[type="submit"]{
+    padding: 5px;
+    background-color:rgb(245, 108, 204);
+}
+.form-row select,
+.form-row textarea {
+    padding: 5px;
+    background-color: rgb(236, 224, 224);
+}
+.form-row select:focus,
+.form-row textarea:focus {
+    background-color: white;
+    border: 2px solid rgb(223, 110, 219);
+}
+.form-row input:focus{
+    padding: 5px;
+    background-color: white;
+}
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+input{
+   box-shadow: 5px 5px 3px rgb(218, 135, 209);
+   border-radius: 5px;
+}
+textarea{
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(237, 172, 224);
+}
+fieldset{
+    border: thin solid rgb(197, 63, 143);
+    box-shadow: 5px 5px 3px gray;
+    background-color: rgb(247, 210, 236);
+    border-radius: 5px;
+}
+legend{
+    border: thin solid rgb(197, 63, 143);
+    background-color:rgb(245, 108, 204);
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+    .form-row label{
+        text-align: left;
+    }
+    .spacer{
+        text-align: left;
+    }
+    .form-row input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
