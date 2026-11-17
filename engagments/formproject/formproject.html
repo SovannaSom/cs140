@@ -11,12 +11,12 @@
         <h1>Voluntary Work Form</h1>
     </header>
     <main>
-        <form action="formprocessing.html" method="post">
+        <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Personal information</legend>
                  <div class="form-row">
-                <label for="personname">Full Name:</label>
-                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                <label for="fullname">Full Name:</label>
+                <input id="fullname" type="text" name="fullname" placeholder="Full Name">
             </div>
             <div class="form-row">
                 <label for="email">Email:</label>
@@ -90,8 +90,45 @@
 
 
     </main>
+    <h1>Answer</h1>
+    <p>1. JavaScript is a programming language mainly used for interactive websites. First, it was called Mocha, then LiveScript. Finally, JavaScript.</p>
+    <p>2. Two ways of run JavaScript: first, run inside HTML file by using script tag. Second, run in an external JavaScript file using node.js./p>
+    <p>3. jQuery is a JavaScript library that makes it easier to work with HTML elements, handle events, and create animations. It is still popular today because many websites continue to use it.</p>
+    <p>4. React is the most popular JavaScript library.</p>
+    <p>5. We use event.preventDefault() to stop the form from being submission. This allows JavaScript to validate and process the form information without immediately reloading the page.</p>
+
     <footer>
         <p>&copy;2026 Sovanna Som</p>
     </footer>
+    <script>
+            document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
+            const fullname = document.getElementById("fullname").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const age = document.getElementById("birthday").value;
+
+            if (!fullname || !email) {
+                alert("You need a name and email.")
+                return;
+            }
+
+            if (!age || age < 18){
+                alert("You need to be 18.")
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData)
+            });
+    </script>
+
 </body>
 </html>
