@@ -17,6 +17,16 @@
                 alert("You need to be 18 or older.")
                 return;
             }
+            if (!password) {
+                alert("Please enter your password.");
+                return;
+            }
+            if (!birthdate) {
+                alert("Please enter your birthday.");
+                return;
+            }
+            
+            
 
             const data = {
                 name: fullname,
@@ -44,7 +54,8 @@
                     
                     // form.textContent="Thank You for Submitting!"
                     // form.style.color = "green";
-                    // form.reset();
+                    document.getElementById("myForm").reset();
+                    form.reset();
 
                 }
                 else if (xhr.readyState===4){
