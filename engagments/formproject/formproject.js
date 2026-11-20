@@ -7,13 +7,20 @@
             const password = document.getElementById("password").value;
             const birthdate = document.getElementById("birthday").value;
             const age = document.getElementById("age").value;
+            const phone = document.getElementById("phone").value;
+            const gender = document.querySelector('input[name="gender"]:checked')?.value;
+            const skills = document.querySelectorAll('input[name="skill"]:checked');
+            const selectedSkills = Array.from(skills).map(skill => skill.value);
+            const country = document.getElementById("country").value;
+            const about = document.getElementById("about").value;
+            const comment = document.getElementById("comment").value;
 
             if (!fullname || !email) {
                 alert("You need a name and email.")
                 return;
             }
 
-            if (!age || age < 18){
+            if (!age || age < 18 || age > 100){
                 alert("You need to be 18 or older.")
                 return;
             }
@@ -33,7 +40,13 @@
                 email: email,
                 password: password,
                 birthdate: birthdate,
-                age: age
+                age: age,
+                phone: phone,
+                gender: gender,
+                skill: selectedSkills,
+                country: country,
+                about: about,
+                comment: comment
 // this called JSON
             };
 
@@ -55,7 +68,6 @@
                     // form.textContent="Thank You for Submitting!"
                     // form.style.color = "green";
                     document.getElementById("myForm").reset();
-                    form.reset();
 
                 }
                 else if (xhr.readyState===4){
