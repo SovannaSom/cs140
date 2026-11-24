@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+iframe{
+    border: 0;
+}
+#royalpalace{
+    width: 350px;
+    margin: 0;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px gray;
+    transform: scale(1, 1);
+    transform: translate(150px, 50px);
+
+}
+#royalpalace img{
+    width: 100%;
+}
+.transition{
+    display: block;
+    padding: 10px;
+    color: blue;
+    background-color: aqua;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.transition:hover{
+    background-color: rgb(130, 220, 97);
+}
